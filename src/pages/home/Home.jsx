@@ -1,6 +1,5 @@
 import React from "react";
-import Sidebar from "../../comp/sidebar/Sidebar";
-import Navbar from "../../comp/navbar/Navbar";
+import Layout from "../../comp/layout/Layout";
 import Widget from '../../comp/widget/Widget';
 import Featured from "../../comp/featured/Featured";
 import Chart from "../../comp/chart/Chart";
@@ -8,10 +7,7 @@ import Table from "../../comp/table/Table";
 import "./home.scss";
 const Home = () => {
   return (
-    <div className="home">
-      <Sidebar />
-      <div className="homeContainer">
-        <Navbar />
+    <Layout>
         <div className="widgets">
           <Widget type="user" />
           <Widget type="order" />
@@ -30,8 +26,8 @@ const Home = () => {
         </div>
 
 
-      </div>
-    </div>
+ 
+    </Layout>
   );
 };
 
